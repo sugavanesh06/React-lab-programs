@@ -1,0 +1,20 @@
+import { useState } from 'react';
+import './car.css'
+
+function App() {
+  const [condition,setCondition]=useState(false);
+ 
+
+  return (
+    <>
+    <div className={condition ? "light":"dark"}>
+    <button onClick={()=> setCondition(!condition)}>toggle</button>
+    <div >theme toggle</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quod voluptate sit, nostrum recusandae quasi ex iste, voluptatem beatae molestiae consequatur in expedita iusto quos suscipit, ipsam quam adipisci quaerat.</p>
+    </div>
+    </>
+  )
+}
+
+export default App
+
